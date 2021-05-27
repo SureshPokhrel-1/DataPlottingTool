@@ -126,8 +126,8 @@ def Data_process():
     res_dpi = call.comboBox_2.currentText()
     X_size = int(call.comboBox_3.currentText())
     Y_size = int(call.comboBox_4.currentText())
-    X_grid = call.radioButton_3.isChecked()
-    Y_grid = call.radioButton_5.isChecked()
+    Y_grid = call.radioButton_3.isChecked()
+    X_grid = call.radioButton_5.isChecked()
     try:
         df = pd.concat([pd.read_csv(fp, low_memory=False) for fp in File], ignore_index=True)
     except:
